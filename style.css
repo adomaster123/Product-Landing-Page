@@ -1,0 +1,175 @@
+html {
+  width: 100vw;
+}
+body {
+  background-color: red;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: courier,arial,helvetica;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+a:hover{
+  font-weight: bold;
+}
+h3 {
+  font-weight: normal;
+}
+#header {
+  position: fixed;
+  height: 125px;
+  top: 0px;
+  z-index: 9999999;
+  background-color: black;
+  color: white;
+  width: 100vw;
+}
+#header-img {
+  height: 100%;
+  position: relative;
+  bottom: 0;
+}
+#nav-bar{
+  text-align: right;
+  position: relative;
+  bottom: 70px;
+  width: 100%;
+}
+ul{
+  list-style-type: none;
+  padding: 10px 10px 10px 0;
+  position: relative;
+  right: 20px;
+}
+li {
+  display: inline;
+  padding-bottom: 5px;;
+  font-size: 20px;
+}
+#form {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 190px;
+  width: 100vw;
+}
+input {
+  font-family: courier,arial,helvetica;
+  outline: none;
+}
+#email {
+  width: 250px; 
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+#submit {
+  position: relative;
+  top: 20px;
+  color: white;
+  background-color: black;
+}
+#content {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px 40px 40px 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.content-item{
+  padding: 20px;
+  width: 100%;
+}
+#vid-div{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 100vw;
+  margin-right: 0;
+}
+#video {
+  position: relative;
+  top: 10px;
+}
+#pricing {
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 12.5vw 12.5vw 12.5vw;
+  grid-template-rows: 250px;
+  grid-column-gap: 15vw;
+  text-align: center;
+  width: 100vw;
+}
+.pricing-item{
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+}
+button {
+  font-family: courier,arial,helvetica;
+  font-size: 30px;
+  color: white;
+  background-color: red;
+  height: 50px;
+  width: 140px;
+  position: relative;
+  top: 60px;
+  outline: none;
+}
+button:hover {
+  background-color: #FF2800;
+}
+#footer {
+  text-align: right;
+  width: 100vw;
+}
+#footer p{
+  position: absolute;
+  bottom: 0;
+}
+#pricing h2{
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1300px) {
+  #form {
+    padding-top: 0;
+  }
+  #header{
+    display: none;
+  }
+  #header-img{
+    display: none;
+  }
+  #form {
+    justify-content: center;
+  }
+  #pricing {
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100vw;
+    grid-template-rows: 98vh 98vh 98vh;
+    grid-column-gap: 0;
+    text-align: center;
+  }
+    .pricing-item {
+    width: 100%;
+    padding-top: 30vh;
+    border: 0px solid black;
+    border-bottom: 5px solid red;
+    border-top: 5px solid red;
+  }
+}
